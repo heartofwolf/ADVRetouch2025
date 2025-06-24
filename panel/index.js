@@ -18764,6 +18764,58 @@ if (dexists === true) {
                     }
                 },
                 {
+                    _obj: "select",
+                    _target: {
+                        _ref: "paintbrushTool"
+                    },
+                    _options: {
+                        dialogOptions: "dontDisplay"
+                    }
+                },
+
+                {
+                    "_obj": "set",
+                    "_target": {
+                        "_ref": "paintbrushTool"
+                    },
+                    "to": {
+                        "_obj": "currentToolOptions",
+                        "opacity": 75,
+                        "flow": 15,
+                        "smooth": 10,
+                        "smoothingValue": 10
+                    },
+                    "_options": {
+                        "dialogOptions": "dontDisplay"
+                    }
+                },
+                {
+                    "_obj": "set",
+                    "_target": {
+                        "_ref": "brush",
+                        "_enum": "ordinal",
+                        "_value": "targetEnum"
+                    },
+                    "to": {
+                        "_obj": "brush",
+                        "spacing": {
+                            "_unit": "percentUnit",
+                            "_value": 10
+                        },
+                        "hardness": {
+                            "_unit": "percentUnit",
+                            "_value": 0
+                        },
+                        "diameter": {
+                            "_unit": "pizelsUnit",
+                            "_value": 100
+                        }
+                    },
+                    "_options": {
+                        "dialogOptions": "dontDisplay"
+                    }
+                },
+                {
                     _obj: "reset",
                     _target: {
                         _ref: "color",
