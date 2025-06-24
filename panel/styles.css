@@ -1,0 +1,444 @@
+/* ==========================================================================
+   Base Styles
+   ========================================================================== */
+body {
+	cursor: default;
+}
+
+/* ==========================================================================
+   Layout & Structure
+   ========================================================================== */
+.wrapper {
+	width: 100vw;
+	height: 100vh;
+	padding: 8px;
+	text-align: center;
+	/* background: radial-gradient(#ff7a1574 0%, rgba(0, 0, 0, 0.55)); */
+}
+
+/* ==========================================================================
+   Logo
+   ========================================================================== */
+.logo {
+	text-align: center;
+	margin: 10px 0px 20px;
+	width: 100vw;
+	height: 35px;
+}
+
+/* Logo background images based on color scheme */
+@media (prefers-color-scheme: dark),
+(prefers-color-scheme: darkest),
+(prefers-color-scheme: light) {
+	.logo {
+		background: url('./img/logo.png');
+	}
+}
+@media (prefers-color-scheme: lightest) {
+	.logo {
+		background: url('./img/logo-dark.png');
+	}
+}
+
+/* ==========================================================================
+   Tabs Navigation
+   ========================================================================== */
+.sp-tabs {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 5px;
+}
+.sp-tab {
+	width: 33.33%;
+	text-align: center;
+}
+.sp-tab sp-label {
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 14px;
+}
+.sp-tab:hover sp-label {
+	color: white;
+}
+.sp-tab.selected {
+	border-bottom: 3px solid #ff8415;
+	margin-bottom: -3px;
+}
+.sp-tab.selected sp-label {
+	color: white;
+}
+
+/* ==========================================================================
+   Tab Pages
+   ========================================================================== */
+.sp-tab-page {
+	display: none;
+	padding: 12px 0;
+	flex-direction: column;
+}
+.sp-tab-page.visible {
+	display: flex;
+}
+.sp-tab-page>* {
+	flex: 0 0 auto;
+}
+
+/* ==========================================================================
+   Groups & Sections
+   ========================================================================== */
+.group {
+	flex: 0 0 auto;
+	border-radius: 4px;
+	padding: 12px 0 5px;
+	position: relative;
+	margin: 10px 0 6px;
+	border: solid 1px #888;
+	/* background: radial-gradient(rgba(96, 40, 0, 0.55), rgba(0, 0, 0, 0.5)); */
+}
+#sp-native-tab-page .group {
+	background-color: transparent;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.group>sp-label:not(.safe) {
+	position: absolute;
+	top: -1em;
+	left: 6px;
+	color: #ff8415;
+	display: block;
+	padding: 3px 12px;
+	border-radius: 4px;
+	border: solid 1px #888;
+}
+.group> :not(sp-label) {
+	margin: 12px;
+}
+.group> :not(sp-label):last-child {
+	margin-bottom: 4px;
+}
+.guides-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+  }
+  
+  .guides-wrapper sp-action-button {
+	align-self: center;
+  }
+
+  .guides-wrapper sp-radio {
+	align-self: center;
+  }
+/* ==========================================================================
+   Rows & Layout
+   ========================================================================== */
+   .row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	
+  }
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+/* Common button styles */
+.buttfull,
+.butthalf,
+.butt70,
+.buttlong,
+.buttthird,
+.buttflex,
+.butt20,
+.buttcustom {
+    height: 24px;
+    font-size: 12px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Full width button */
+.buttfull {
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+/* Half width button */
+.butthalf {
+	width: 49.2%;
+}
+
+/* 70% width button */
+.butt70 {
+	width: 70%;
+}
+
+/* Long button */
+.buttlong {
+	width: 226px;
+}
+
+/* Third width button */
+.buttthird {
+	width: 32%;
+}
+
+/* Third width button */
+.buttcustom {
+	width: 40%;
+}
+
+/* Flexible width button */
+.buttflex {
+	width: 100px;
+	display: flex;
+}
+
+/* 20% width button */
+.butt20 {
+	width: 20px;
+	height: 22px;
+	font-size: 13px;
+	margin-left: 2px;
+	margin-right: 0;
+	padding: 0;
+}
+
+/* ==========================================================================
+   Tool Icons
+   ========================================================================== */
+.divicon {
+	width: 24px;
+	height: 24px;
+	border: solid 1px;
+	border-color: var(--uxp-host-border-color);
+	border-radius: 4px;
+	background-color: var(--uxp-host-background-color);
+	display: inline-block;
+}
+.divicon:hover {
+	background-color: var(--uxp-host-background-color);
+	border-color: var(--uxp-host-widget-hover-border-color);
+}
+.divicon:active {
+	background-color: #3e3e3e;
+}
+
+.diviconlayer {
+	border: solid 1px;
+	display: inline-block;
+	align-items: center;
+	justify-content: center;
+	padding: 6px;
+	margin-right: 12px;
+	border-radius: 4px;
+	border-color: rgba(0, 0, 0, 0.2);
+}
+
+.diviconlayer img {
+	width: 18px;
+	height: 18px;
+}
+
+.diviconlayer:last-child {
+	margin-right: 0;
+}
+
+.diviconlayer:hover {
+background-color: rgba(0, 0, 0, 0.2);
+border-color: var(--uxp-host-widget-hover-border-color);
+}
+.diviconlayer:active {
+background-color: rgba(0, 0, 0, 0.4);
+border-color: #ff8415
+}
+/* ==========================================================================
+   Color Schemes
+   ========================================================================== */
+/* Dark theme styles */
+@media (prefers-color-scheme: dark),
+(prefers-color-scheme: darkest) {
+	.group {
+		background-color: rgba(0, 0, 0, 0.55);
+	}
+	.group>sp-label:not(.safe) {
+		background-color: #222;
+	}
+	.sp-tab {
+		background-color: rgba(0, 0, 0, 0.3);
+	}
+	.sp-tab.selected {
+		background: rgba(0, 0, 0, 0.5);
+	}
+}
+/* Light theme styles */
+@media (prefers-color-scheme: light),
+(prefers-color-scheme: lightest) {
+	.group {
+		background-color: rgba(255, 255, 255, 0.4);
+	}
+	.group>sp-label:not(.safe) {
+		background-color: #E8E8E8;
+	}
+	.sp-tab {
+		background-color: rgba(0, 0, 0, 0.1);
+	}
+	.sp-tab.selected {
+		background: rgba(0, 0, 0, 0.2);
+	}
+}
+
+/* ==========================================================================
+   Slider Color Indicators
+   ========================================================================== */
+
+.slider-container {
+	position: relative;
+	display: flex;
+	align-items: center;
+	margin-bottom: 8px;
+	width: 100%;
+}
+
+.slider-container sp-slider {
+	flex: 1 1 auto;
+	min-width: 0;
+	width: 100%;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.color-indicator {
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	margin: 0 4px;
+	border: 1.5px solid rgba(255,255,255,0.12);
+	/* No box-shadow, transition, or transform for UXP compatibility */
+}
+
+/* Temperature Slider Colors */
+.temp-cold {
+	background: linear-gradient(135deg, #b3e6ff 60%, #4169E1 100%);
+}
+.temp-warm {
+	background: linear-gradient(135deg, #FFD580 60%, #FF4500 100%);
+}
+
+/* Tint Slider Colors */
+.tint-green {
+	background: linear-gradient(135deg, #baffc9 60%, #228B22 100%);
+}
+.tint-magenta {
+	background: linear-gradient(135deg, #ffb3e6 60%, #C71585 100%);
+}
+
+/* Dark theme adjustments */
+@media (prefers-color-scheme: dark) {
+	.color-indicator {
+		border: 1.5px solid rgba(255,255,255,0.18);
+	}
+}
+
+/* Tighter spacing for slider labels */
+.slider-container sp-slider sp_label[slot="label"] {
+	margin-bottom: 0;
+	padding-bottom: 0;
+	line-height: 1;
+	font-size: 12px;
+	display: block;
+}
+
+/* ==========================================================================
+   Slider Row for Edge Dots
+   ========================================================================== */
+.slider-row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 8px;
+}
+.slider-row .color-indicator {
+    flex: 0 0 auto;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin: 0;
+    background-color: transparent; /* default, will be overridden below */
+}
+.slider-row sp-slider {
+    flex: 1 1 auto;
+    min-width: 0;
+    margin: 0 2px;
+}
+
+/* Solid color for each dot */
+.temp-cold { background-color: #4ab6ff; }
+.temp-warm { background-color: #ff8c1a; }
+.tint-green { background-color: #3ecb6d; }
+.tint-magenta { background-color: #e04ecb; }
+
+
+/* ==========================================================================
+   Shape Section Buttons 
+   ========================================================================== */
+
+
+.shape-row2 {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 8px; /* spacing between rows */
+  }
+  
+  .shape-group2 {
+	font-size: 12px;
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+  }
+  
+  .shape-group2 span {
+	flex: 1;
+	margin-right: 8px;
+	white-space: nowrap;
+  }
+  
+  .divicon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .shape-group2 .divicon + .divicon {
+	margin-left: 4px;
+  }
+/* ==========================================================================
+   Copyright Note
+   ========================================================================== */
+
+   .copyright-note {
+	text-align: center;
+	font-size: 12px;
+	color: rgba(0, 0, 0, 0.8);
+	margin-top: 4px;
+	margin-bottom: 4px;
+  }
+
+
+
+
+/* Set font size for radio buttons and canvas size symbols */
+#canvasBgColor sp-radio,
+#canvasPlacement sp-radio,
+#canvasMargin sp-radio,
+.canvas-size-symbol {
+    font-size: 12px;
+}
+
+.canvas-size-symbol {
+	font-size: 12px;
+  }

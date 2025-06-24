@@ -1,0 +1,7 @@
+<!-- filepath: /Users/adamfedorowicz/Documents/ADV 2025/web/icon-speed.svg -->
+<svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="27" cy="27" r="22" stroke="#ff8415" stroke-width="3" fill="none"/>
+  <path d="M27 27l10-10" stroke="#ff8415" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="27" cy="27" r="4" fill="#ff8415"/>
+  <path d="M27 8v4M46 27h-4M27 46v-4M8 27h4" stroke="#ff8415" stroke-width="2" stroke-linecap="round"/>
+</svg>
