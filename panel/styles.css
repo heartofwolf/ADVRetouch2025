@@ -224,6 +224,10 @@ body {
 	border-color: rgba(255, 255, 255, 0.3);
 }
 
+/* ==========================================================================
+   Layer Icons
+   ========================================================================== */
+
 .diviconlayer {
 	border: solid 1px;
 	display: inline-block;
@@ -437,8 +441,10 @@ border-color: #ff8415
 
 
 
+/* ==========================================================================
+   Set font size for radio buttons and canvas size symbols
+   ========================================================================== */
 
-/* Set font size for radio buttons and canvas size symbols */
 #canvasBgColor sp-radio,
 #canvasPlacement sp-radio,
 #canvasMargin sp-radio,

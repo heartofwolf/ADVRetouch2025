@@ -447,7 +447,7 @@
             <div style="align-content: center; width: 100%;">
               <sp-textfield size="s" placeholder="top" id="guidetop" type="number" style="width: 32%; margin-bottom: 4px"></sp-textfield>
             </div>
-            <div>
+          <div>
             <sp-textfield size="s" placeholder="left" id="guideleft" type="number" style="width: 32%"></sp-textfield>
             <sp-action-button style="height: 24px" id="btnaddguides" class="buttthird">ADD GUIDES</sp-action-button>
             <sp-textfield size="s" placeholder="right" id="guideright" type="number" style="width: 32%"></sp-textfield>
@@ -462,7 +462,7 @@
               <sp-radio value="percentUnit" checked>%</sp-radio>
               <sp-radio value="pixelsUnit">px</sp-radio>
             </sp-radio-group>
-            </div>
+          </div>
             <sp-action-button id="btncross" class="butthalf">CROSS GUIDE</sp-action-button>
             <sp-action-button id="btnRuleOfThirds" class="butthalf">RULE OF THIRDS</sp-action-button>
             <sp-action-button id="btnGoldenRatio" class="butthalf">GOLDEN RATIO</sp-action-button>
@@ -478,7 +478,7 @@
         <div class="group">
           <sp-label>PREPARE FOR SOCIAL MEDIA</sp-label>
           <sp-body style="margin-bottom: 8px;">
-            
+                    <!-- Scaling -->
           <div style="display: flex; justify-content: space-between; align-items: center;">
             <sp-label style="margin: 0;">SCALING</sp-label>
             <sp-radio-group id="canvasPlacement" direction="horizontal" style="margin-right: 13px;">
@@ -494,9 +494,7 @@
               <sp-radio value="black">BLACK</sp-radio>
             </sp-radio-group>
           </div>
-
-        
-
+                      <!-- Canvas Margin Selection -->
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 9px;">
             <sp-label style="margin: 0;">CANVAS MARGIN</sp-label>
             <sp-radio-group id="canvasMargin" direction="horizontal" style="margin-right: 17px;">
@@ -504,12 +502,12 @@
               <sp-radio value="no">NO</sp-radio>
             </sp-radio-group>
           </div>
-           
+                      <!-- Canvas Size Selection -->  
           <sp-action-button id="btnCanvasSquare" class="butthalf">SQUARE (1080×1080)</sp-action-button>
           <sp-action-button id="btnCanvasPortrait" class="butthalf">PORTRAIT (1080×1350)</sp-action-button>
           <sp-action-button id="btnCanvasStory" class="butthalf">STORY (1080×1920)</sp-action-button>
           <sp-action-button id="btnCanvasLandscape" class="butthalf">LANDSCAPE (1080x566)</sp-action-button>
-
+                      <!-- Custom Size -->    
           <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
             <sp-action-button id="btnCustomSize" class="buttcustom">CUSTOM SIZE</sp-action-button>
             <sp-textfield id="customWidth" size="s" placeholder="width" id="customWidth" type="number" style="width: 22%;"></sp-textfield>
@@ -568,7 +566,7 @@
                <div class="diviconlayer" role="button" title="Delete Layer" id="btnDelete">
                 <img src="./icons/layers/deleteh.png" alt="Delete Layer">
               </div>  
-</div>  
+      </div>  
     </main>
   </body>
 </html>

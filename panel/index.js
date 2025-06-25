@@ -17949,7 +17949,6 @@ else {  PhotoshopCore.showAlert({message: '📄 Open an image first'});}
 
 document.getElementById("btnlipbalsam").addEventListener("click", lipbalsam);
 
-
 /////////////////////////////////////////////////////////////////////////////////////
 /////////                          SKIN TEXTURE                             /////////
 /////////////////////////////////////////////////////////////////////////////////////
@@ -18085,7 +18084,6 @@ else {  PhotoshopCore.showAlert({message: '📄 Open an image first'});}
 }
 
 document.getElementById("btnenhanceds").addEventListener("click", skintexture);
-
 
 /////////////////////////////////////////////////////////////////////////////////////
 /////////                               BLUSH                               /////////
@@ -18269,7 +18267,6 @@ else {  PhotoshopCore.showAlert({message: '📄 Open an image first'});}
 }
 
 document.getElementById("btnblush").addEventListener("click", blush);
-
 
 /////////////////////////////////////////////////////////////////////////////////////
 /////////                              CONTOUR                              /////////
@@ -18457,8 +18454,6 @@ else {  PhotoshopCore.showAlert({message: '📄 Open an image first'});}
 }
 
 document.getElementById("btncontour").addEventListener("click", contour);
-
-
 
 /////////////////////////////////////////////////////////////////////////////////////
 /////////                          HIGHLIGHT                                /////////
@@ -18833,7 +18828,6 @@ else {  PhotoshopCore.showAlert({message: '📄 Open an image first'});}
 
 document.getElementById("btnsmokeyeyes").addEventListener("click", smokeyeyes);
 
-
 /////////////////////////////////////////////////////////////////////////////////////
 /////////                            MASCARA                                /////////
 /////////////////////////////////////////////////////////////////////////////////////
@@ -19098,7 +19092,6 @@ else {  PhotoshopCore.showAlert({message: '📄 Open an image first'});}
 
 document.getElementById("btnmascara").addEventListener("click", mascara);
 
-
 /////////////////////////////////////////////////////////////////////////////////////
 /////////                       CANVAS SIZE PRESETS                          ////////
 /////////////////////////////////////////////////////////////////////////////////////
@@ -19270,7 +19263,6 @@ else {  PhotoshopCore.showAlert({message: '📄 Open an image first'});}
 }
 document.getElementById("btnFileInfo").addEventListener("click", fileInfo);
 
-
 /////////////////////////////////////////////////////////////////////////////////////
 /////////                             ADD MASK                             /////////
 /////////////////////////////////////////////////////////////////////////////////////
@@ -19406,6 +19398,7 @@ async function deleteSelected() {
 }
 
 document.getElementById("btnDelete").addEventListener("click", deleteSelected);
+
 /////////////////////////////////////////////////////////////////////////////////////
 /////////                          GENERATIVE FILL                           /////////
 /////////////////////////////////////////////////////////////////////////////////////
