@@ -212,17 +212,16 @@ body {
 	width: 24px;
 	height: 24px;
 	border: solid 1px;
-	border-color: var(--uxp-host-border-color);
 	border-radius: 4px;
-	background-color: var(--uxp-host-background-color);
 	display: inline-block;
 }
 .divicon:hover {
 	background-color: var(--uxp-host-background-color);
-	border-color: var(--uxp-host-widget-hover-border-color);
+	border-color: rgba(255, 255, 255, 0.3);
 }
 .divicon:active {
 	background-color: #3e3e3e;
+	border-color: rgba(255, 255, 255, 0.3);
 }
 
 .diviconlayer {
@@ -271,6 +270,10 @@ border-color: #ff8415
 	.sp-tab.selected {
 		background: rgba(0, 0, 0, 0.5);
 	}
+	.divicon {
+		border-color: rgba(255, 255, 255, 0.2);
+		background-color: var(--uxp-host-background-color);
+	}
 }
 /* Light theme styles */
 @media (prefers-color-scheme: light),
@@ -286,6 +289,10 @@ border-color: #ff8415
 	}
 	.sp-tab.selected {
 		background: rgba(0, 0, 0, 0.2);
+	}
+		.divicon {
+		border-color: rgba(0, 0, 0, 0.2);
+		background-color: var(--uxp-host-background-color);
 	}
 }
 
