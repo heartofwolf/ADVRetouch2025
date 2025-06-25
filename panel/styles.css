@@ -215,14 +215,7 @@ body {
 	border-radius: 4px;
 	display: inline-block;
 }
-.divicon:hover {
-	background-color: var(--uxp-host-background-color);
-	border-color: rgba(255, 255, 255, 0.3);
-}
-.divicon:active {
-	background-color: #3e3e3e;
-	border-color: rgba(255, 255, 255, 0.3);
-}
+
 
 /* ==========================================================================
    Layer Icons
@@ -248,14 +241,7 @@ body {
 	margin-right: 0;
 }
 
-.diviconlayer:hover {
-background-color: rgba(0, 0, 0, 0.2);
-border-color: var(--uxp-host-widget-hover-border-color);
-}
-.diviconlayer:active {
-background-color: rgba(0, 0, 0, 0.4);
-border-color: #ff8415
-}
+
 /* ==========================================================================
    Color Schemes
    ========================================================================== */
@@ -275,9 +261,26 @@ border-color: #ff8415
 		background: rgba(0, 0, 0, 0.5);
 	}
 	.divicon {
-		border-color: rgba(255, 255, 255, 0.2);
+		border-color: rgba(255, 255, 255, 0.15);
 		background-color: var(--uxp-host-background-color);
 	}
+.divicon:hover {
+	background-color: var(--uxp-host-background-color);
+	border-color: rgba(255, 255, 255, 0.3);
+}
+.divicon:active {
+	background-color: #3e3e3e;
+	border-color: rgba(255, 255, 255, 0.3);
+}
+.diviconlayer:hover {
+background-color: rgba(0, 0, 0, 0.2);
+border-color: var(--uxp-host-widget-hover-border-color);
+}
+.diviconlayer:active {
+background-color: rgba(0, 0, 0, 0.4);
+border-color: #ff8415
+}
+
 }
 /* Light theme styles */
 @media (prefers-color-scheme: light),
@@ -298,6 +301,25 @@ border-color: #ff8415
 		border-color: rgba(0, 0, 0, 0.2);
 		background-color: var(--uxp-host-background-color);
 	}
+
+	.divicon:hover {
+	background-color:  rgba(0, 0, 0, 0.2);
+	border-color: rgba(0, 0, 0, 0.3);
+}
+.divicon:active {
+	background-color:  rgba(0, 0, 0, 0.3);
+	border-color: rgba(0, 0, 0, 0.3);
+}
+
+.diviconlayer:hover {
+	background-color:  rgba(0, 0, 0, 0.1);
+border-color: var(--uxp-host-widget-hover-border-color);
+}
+.diviconlayer:active {
+	background-color:  rgba(0, 0, 0, 0.2);
+border-color: #ff8415
+}
+
 }
 
 /* ==========================================================================
