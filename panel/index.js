@@ -74,6 +74,10 @@ function debounce(fn, delay) {
 
 document.addEventListener("DOMContentLoaded", () => {
 
+    document.getElementById("btnmask").addEventListener("click", mask);
+    document.getElementById("btnDelete").addEventListener("click", deleteSelected);
+
+
 // --- Canvas Placement: Enable/Disable canvasBgColor and canvasMargin ---
 
 function updateCanvasOptionsState() {
@@ -19357,7 +19361,7 @@ async function mask() {
     }
 }
 
-document.getElementById("btnmask").addEventListener("click", mask);
+// document.getElementById("btnmask").addEventListener("click", mask);
 
 /////////////////////////////////////////////////////////////////////////////////////
 /////////                                 DELETE                            /////////
@@ -19397,7 +19401,7 @@ async function deleteSelected() {
     }, { commandName: "Delete selected" });
 }
 
-document.getElementById("btnDelete").addEventListener("click", deleteSelected);
+// document.getElementById("btnDelete").addEventListener("click", deleteSelected);
 
 /////////////////////////////////////////////////////////////////////////////////////
 /////////                          GENERATIVE FILL                           /////////
