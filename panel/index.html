@@ -1,36 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- ==========================================================================
-         Meta Information
-         ========================================================================== -->
+    <!-- ========================================================================== -->
+    <!-- Meta Information                                                          -->
+    <!-- ========================================================================== -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="ADV.RETOUCH Panel - Professional retouching tools for Adobe Photoshop">
     <title>ADV.RETOUCH Panel UXP Edition</title>
 
-    <!-- ==========================================================================
-         External Resources
-         ========================================================================== -->
+    <!-- ========================================================================== -->
+    <!-- External Resources                                                         -->
+    <!-- ========================================================================== -->
     <link rel="stylesheet" href="styles.css">
     <script src="index.js"></script>
-
   </head>
-
   <body>
-    <!-- ==========================================================================
-         Main Panel Container
-         ========================================================================== -->
+    <!-- ========================================================================== -->
+    <!-- Main Panel Container                                                      -->
+    <!-- ========================================================================== -->
     <main class="wrapper" role="main" aria-label="ADV.RETOUCH Panel">
-
-      <!-- ==========================================================================
-           Logo Section
-           ========================================================================== -->
+      <!-- ========================================================================== -->
+      <!-- Logo Section                                                             -->
+      <!-- ========================================================================== -->
       <div class="logo" role="img" aria-label="ADV.RETOUCH Logo"></div>
 
-      <!-- ==========================================================================
-           Main Navigation Tabs
-           ========================================================================== -->
+      <!-- ========================================================================== -->
+      <!-- Main Navigation Tabs                                                     -->
+      <!-- ========================================================================== -->
       <nav class="sp-tabs" role="tablist" aria-label="Panel Navigation">
         <div class="sp-tab selected" id="sp-retouch-tab" role="tab" tabindex="0" aria-selected="true" aria-controls="sp-retouch-tab-page">
           <sp-label>RETOUCH</sp-label>
@@ -43,15 +40,13 @@
         </div>
       </nav>
 
-      <!-- ==========================================================================
-           Retouch Tab Content
-           ========================================================================== -->
+      <!-- ========================================================================== -->
+      <!-- Retouch Tab Content                                                       -->
+      <!-- ========================================================================== -->
       <section class="sp-tab-page visible" id="sp-retouch-tab-page" role="tabpanel">
-
-
-        <!-- ==========================================================================
-             Functions Section
-             ========================================================================== -->
+        <!-- ========================================================================== -->
+        <!-- Functions Section                                                         -->
+        <!-- ========================================================================== -->
         <div class="group" role="group" aria-labelledby="functions-label">
           <sp-label id="functions-label">FUNCTIONS</sp-label>
           <sp-body id="buttons" style="margin-bottom: 5px;">
@@ -68,12 +63,13 @@
           </sp-body>
         </div>
 
-        <!-- ==========================================================================
-             Adjustments Section
-             ========================================================================== -->
+        <!-- ========================================================================== -->
+        <!-- Adjustments Section                                                       -->
+        <!-- ========================================================================== -->
         <div class="group" role="group">
           <sp-label id="adjustments-label">ADJUSTMENTS</sp-label>
-          <sp-body id="buttonsshape" style="text-align: right; margin-bottom: 1px;">
+          <sp-body id="buttonsshape" style="text-align: right; margin-bottom: 6px;">
+            <!-- Exposure & Contrast -->
             <div class="shape-row2">
               <div class="shape-group2">
                 <span>EXPOSURE</span>
@@ -94,6 +90,7 @@
                 </div>
               </div>
             </div>
+            <!-- Highlights & Shadows -->
             <div class="shape-row2">
               <div class="shape-group2">
                 <span>HIGHLIGHTS</span>
@@ -114,6 +111,7 @@
                 </div>
               </div>
             </div>
+            <!-- Whites & Blacks -->
             <div class="shape-row2">
               <div class="shape-group2">
                 <span>WHITES</span>
@@ -134,6 +132,7 @@
                 </div>
               </div>
             </div>
+            <!-- Vibrance & Saturation -->
             <div class="shape-row2">
               <div class="shape-group2">
                 <span>VIBRANCE</span>
@@ -157,9 +156,9 @@
           </sp-body>
         </div>
 
-        <!-- ==========================================================================
-             White Balance Section
-             ========================================================================== -->
+        <!-- ========================================================================== -->
+        <!-- White Balance Section                                                     -->
+        <!-- ========================================================================== -->
         <div class="group" role="group">
           <sp-label id="wb-label">WHITE BALANCE</sp-label>
           <sp-body style="margin-bottom: 5px;">
@@ -180,7 +179,7 @@
               <div class="color-indicator tint-magenta"></div>
             </div>
             <!-- White Balance Mode Row -->
-            <div  style="display: flex; justify-content: space-between; align-items: center; font-size: 10px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 10px;">
               <span id="wbmode">Manual White Balance</span>
               <sp-switch id="wbAutoSwitch">Auto</sp-switch>
             </div>
@@ -191,28 +190,26 @@
           </sp-body>
         </div>
 
-        <!-- ==========================================================================
-             AI Section
-             ========================================================================== -->
-             <div class="group" style="margin-bottom: 1px;">
-                <sp-label>AI TOOLS</sp-label>
-                <sp-body id="buttons"  style="margin-bottom: 4px;">
-                  <sp-action-button id="btngenerativeFill" class="butthalf">GENERATIVE FILL</sp-action-button>
-                  <sp-action-button id="btnneural" class="butthalf">NEURAL FILTERS</sp-action-button>
-                  <sp-action-button id="btngenerateImage" class="buttfull">GENERATE IMAGE</sp-action-button>
-                </sp-body>
-              </div>
-
+        <!-- ========================================================================== -->
+        <!-- AI Section                                                                -->
+        <!-- ========================================================================== -->
+        <div class="group" style="margin-bottom: 1px;">
+          <sp-label>AI TOOLS</sp-label>
+          <sp-body id="buttons" style="margin-bottom: 9px;">
+            <sp-action-button id="btngenerativeFill" class="butthalf">GENERATIVE FILL</sp-action-button>
+            <sp-action-button id="btnneural" class="butthalf">NEURAL FILTERS</sp-action-button>
+            <sp-action-button id="btngenerateImage" class="buttfull">GENERATE IMAGE</sp-action-button>
+          </sp-body>
+        </div>
       </section>
 
-      <!-- ==========================================================================
-           Beauty Tab Content
-           ========================================================================== -->
+      <!-- ========================================================================== -->
+      <!-- Beauty Tab Content                                                         -->
+      <!-- ========================================================================== -->
       <section class="sp-tab-page" id="sp-beauty-tab-page" role="tabpanel">
-
-        <!-- ==========================================================================
-             Beauty Retouch Section
-             ========================================================================== -->
+        <!-- ========================================================================== -->
+        <!-- Beauty Retouch Section                                                     -->
+        <!-- ========================================================================== -->
         <div class="group" role="group">
           <sp-label id="beauty-retouch-label">BEAUTY RETOUCH</sp-label>
           <sp-body id="beautyretouch" style="margin-bottom: 5px;">
@@ -229,9 +226,9 @@
           </sp-body>
         </div>
 
-        <!-- ==========================================================================
-             Digital Makeup Section
-             ========================================================================== -->
+        <!-- ========================================================================== -->
+        <!-- Digital Makeup Section                                                     -->
+        <!-- ========================================================================== -->
         <div class="group" role="group">
           <sp-label id="digital-makeup-label">DIGITAL MAKEUP</sp-label>
           <sp-body style="margin-bottom: 5px;">
@@ -246,10 +243,10 @@
           </sp-body>
         </div>
 
-        <!-- ==========================================================================
-             Dodge and Burn Section
-             ========================================================================== -->
-        <div class="group" role="group"">
+        <!-- ========================================================================== -->
+        <!-- Dodge and Burn Section                                                     -->
+        <!-- ========================================================================== -->
+        <div class="group" role="group">
           <sp-label id="dodge-burn-label">DODGE AND BURN</sp-label>
           <sp-body style="margin-bottom: 8px;">
             <div class="row">
@@ -265,9 +262,9 @@
           </sp-body>
         </div>
 
-        <!-- ==========================================================================
-             Frequency Separation Section
-             ========================================================================== -->
+        <!-- ========================================================================== -->
+        <!-- Frequency Separation Section                                               -->
+        <!-- ========================================================================== -->
         <div class="group" role="group">
           <sp-label id="fs-label">FREQUENCY SEPARATION</sp-label>
           <sp-body style="margin-bottom: 8px;">
@@ -286,242 +283,241 @@
           </sp-body>
         </div>
 
-        <!-- ==========================================================================
-             Shape Section
-             ========================================================================== -->
+        <!-- ========================================================================== -->
+        <!-- Shape Section                                                             -->
+        <!-- ========================================================================== -->
         <div class="group" role="group" style="margin-bottom: 0px;">
           <sp-label id="shape-label">SHAPE</sp-label>
           <sp-body id="buttonsshape" style="text-align: right; margin-bottom: 9px;">
+            <!-- Eyes & Nose -->
             <div class="shape-row2">
               <div class="shape-group2">
-                <span>EYES</span>
-                <div id="btneyeminus" class="divicon" aria-label="Decrease Eyes">
+                <span>EXPOSURE</span>
+                <div id="btnexpminus" class="divicon">
                   <img src="./icons/icon-minus.png" width="20" height="20" alt="-">
                 </div>
-                <div id="btneyeplus" class="divicon" aria-label="Increase Eyes">
+                <div id="btnexpplus" class="divicon" style="margin-right: 5px;">
                   <img src="./icons/icon-plus.png" width="20" height="20" alt="+">
                 </div>
               </div>
               <div class="shape-group2">
-                <span>NOSE</span>
-                <div id="btnnoseminus" class="divicon" aria-label="Decrease Nose">
+                <span>CONTRAST</span>
+                <div id="btnconminus" class="divicon">
                   <img src="./icons/icon-minus.png" width="20" height="20" alt="-">
                 </div>
-                <div id="btnnoseplus" class="divicon" aria-label="Increase Nose">
+                <div id="btnconplus" class="divicon">
                   <img src="./icons/icon-plus.png" width="20" height="20" alt="+">
                 </div>
               </div>
             </div>
+            <!-- Highlights & Shadows -->
             <div class="shape-row2">
               <div class="shape-group2">
-                <span>MOUTH</span>
-                <div id="btnmouthminus" class="divicon" aria-label="Decrease Mouth">
+                <span>HIGHLIGHTS</span>
+                <div id="btnhiliminus" class="divicon" aria-label="Decrease Highlights">
                   <img src="./icons/icon-minus.png" width="20" height="20" alt="-">
                 </div>
-                <div id="btnmouthplus" class="divicon" aria-label="Increase Mouth">
+                <div id="btnhiliplus" class="divicon" aria-label="Increase Highlights" style="margin-right: 5px;">
                   <img src="./icons/icon-plus.png" width="20" height="20" alt="+">
                 </div>
               </div>
               <div class="shape-group2">
-                <span>SMILE</span>
-                <div id="btnsmileminus" class="divicon" aria-label="Decrease Smile">
+                <span>SHADOWS</span>
+                <div id="btnshadminus" class="divicon" aria-label="Decrease Shadows">
                   <img src="./icons/icon-minus.png" width="20" height="20" alt="-">
                 </div>
-                <div id="btnsmileplus" class="divicon" aria-label="Increase Smile">
+                <div id="btnshadplus" class="divicon" aria-label="Increase Shadows">
                   <img src="./icons/icon-plus.png" width="20" height="20" alt="+">
                 </div>
               </div>
             </div>
+            <!-- Whites & Blacks -->
             <div class="shape-row2">
               <div class="shape-group2">
-                <span>FOREHEAD</span>
-                <div id="btnforeheadminus" class="divicon" aria-label="Decrease Forehead">
+                <span>WHITES</span>
+                <div id="btnwhipminus" class="divicon" aria-label="Decrease Whites">
                   <img src="./icons/icon-minus.png" width="20" height="20" alt="-">
                 </div>
-                <div id="btnforeheadplus" class="divicon" aria-label="Increase Forehead">
+                <div id="btnwhipplus" class="divicon" aria-label="Increase Whites" style="margin-right: 5px;">
                   <img src="./icons/icon-plus.png" width="20" height="20" alt="+">
                 </div>
               </div>
               <div class="shape-group2">
-                <span>JAWLINE</span>
-                <div id="btnjawlineminus" class="divicon" aria-label="Decrease Jawline">
+                <span>BLACKS</span>
+                <div id="btnblaminus" class="divicon" aria-label="Decrease Blacks">
                   <img src="./icons/icon-minus.png" width="20" height="20" alt="-">
                 </div>
-                <div id="btnjawlineplus" class="divicon" aria-label="Increase Jawline">
+                <div id="btnblaplus" class="divicon" aria-label="Increase Blacks">
                   <img src="./icons/icon-plus.png" width="20" height="20" alt="+">
                 </div>
               </div>
             </div>
+            <!-- Vibrance & Saturation -->
             <div class="shape-row2">
               <div class="shape-group2">
-                <span>CHIN</span>
-                <div id="btnchinminus" class="divicon" aria-label="Decrease Chin">
+                <span>VIBRANCE</span>
+                <div id="btnvibminus" class="divicon" aria-label="Decrease Vibrance">
                   <img src="./icons/icon-minus.png" width="20" height="20" alt="-">
                 </div>
-                <div id="btnchinplus" class="divicon" aria-label="Increase Chin">
+                <div id="btnvibplus" class="divicon" aria-label="Increase Vibrance" style="margin-right: 5px;">
                   <img src="./icons/icon-plus.png" width="20" height="20" alt="+">
                 </div>
               </div>
               <div class="shape-group2">
-                <span>FACE</span>
-                <div id="btnfaceminus" class="divicon" aria-label="Decrease Face">
+                <span>SATURATION</span>
+                <div id="btnsatminus" class="divicon" aria-label="Decrease Saturation">
                   <img src="./icons/icon-minus.png" width="20" height="20" alt="-">
                 </div>
-                <div id="btnfaceplus" class="divicon" aria-label="Increase Face">
+                <div id="btnsatplus" class="divicon" aria-label="Increase Saturation">
                   <img src="./icons/icon-plus.png" width="20" height="20" alt="+">
                 </div>
               </div>
             </div>
           </sp-body>
         </div>
-
       </section>
 
-      <!-- ==========================================================================
-           Other Tab Content
-           ========================================================================== -->
+      <!-- ========================================================================== -->
+      <!-- Other Tab Content                                                          -->
+      <!-- ========================================================================== -->
       <section class="sp-tab-page" id="sp-misc-tab-page" role="tabpanel" aria-labelledby="sp-misc-tab">
-
-        <!-- ==========================================================================
-             Filters Section
-             ========================================================================== -->
-             <div class="group" role="group" aria-labelledby="filters-label">
-                <sp-label id="filters-label">FILTERS</sp-label>
-                <sp-body  style="margin-bottom: 8px;">
-                  <sp-picker size="s" placeholder="SELECT FILTER" style="width: 100%;" id="filters" aria-label="Filter Selection">
-                    <sp-menu slot="options">
-                      <sp-menu-item disabled id="def" value="aaa">SELECT FILTER</sp-menu-item>
-                      <sp-menu-item value="glamtone">GLAMOUR TONE</sp-menu-item>
-                      <sp-menu-item value="sunglow">SUN GLOW</sp-menu-item>
-                      <sp-menu-item value="sunnylook">SUNNY LOOK</sp-menu-item>
-                      <sp-menu-divider></sp-menu-divider>
-                      <sp-menu-item value="modern1">MODERN 1</sp-menu-item>
-                      <sp-menu-item value="modern2">MODERN 2</sp-menu-item>
-                      <sp-menu-item value="modern3">MODERN 3</sp-menu-item>
-                      <sp-menu-item value="modern4">MODERN 4</sp-menu-item>
-                      <sp-menu-item value="modern5">MODERN 5</sp-menu-item>
-                      <sp-menu-item value="modern6">MODERN 6</sp-menu-item>
-                      <sp-menu-item value="modern7">MODERN 7</sp-menu-item>
-                      <sp-menu-item value="modern8">MODERN 8</sp-menu-item>
-                      <sp-menu-item value="modern9">MODERN 9</sp-menu-item>
-                      <sp-menu-item value="modern10">MODERN 10</sp-menu-item>
-                      <sp-menu-divider></sp-menu-divider>
-                      <sp-menu-item value="vintage1">VINTAGE 1</sp-menu-item>
-                      <sp-menu-item value="vintage2">VINTAGE 2</sp-menu-item>
-                      <sp-menu-item value="vintage3">VINTAGE 3</sp-menu-item>
-                      <sp-menu-item value="vintage4">VINTAGE 4</sp-menu-item>
-                      <sp-menu-item value="vintage5">VINTAGE 5</sp-menu-item>
-                      <sp-menu-item value="vintage6">VINTAGE 6</sp-menu-item>
-                      <sp-menu-item value="vintage7">VINTAGE 7</sp-menu-item>
-                      <sp-menu-item value="vintage8">VINTAGE 8</sp-menu-item>
-                      <sp-menu-item value="vintage9">VINTAGE 9</sp-menu-item>
-                      <sp-menu-item value="vintage10">VINTAGE 10</sp-menu-item>
-                      <sp-menu-divider></sp-menu-divider>
-                      <sp-menu-item value="bw1">BLACK & WHITE 1</sp-menu-item>
-                      <sp-menu-item value="bw2">BLACK & WHITE 2</sp-menu-item>
-                      <sp-menu-item value="bw3">BLACK & WHITE 3</sp-menu-item>
-                      <sp-menu-item value="bw4">BLACK & WHITE 4</sp-menu-item>
-                      <sp-menu-item value="bw5">BLACK & WHITE 5</sp-menu-item>
-                      <sp-menu-item value="bw6">BLACK & WHITE 6</sp-menu-item>
-                      <sp-menu-item value="bw7">BLACK & WHITE 7</sp-menu-item>
-                      <sp-menu-item value="bw8">BLACK & WHITE 8</sp-menu-item>
-                      <sp-menu-divider></sp-menu-divider>
-                      <sp-menu-item value="grainsmall">GRAIN SMALL</sp-menu-item>
-                      <sp-menu-item value="grainmedium">GRAIN MEDIUM</sp-menu-item>
-                      <sp-menu-item value="grainlarge">GRAIN LARGE</sp-menu-item>
-                      <sp-menu-item value="grainextralarge">GRAIN EXTRA LARGE</sp-menu-item>
-                      <sp-menu-divider></sp-menu-divider>
-                      <sp-menu-item value="vignetting">VIGNETTING</sp-menu-item>
-                    </sp-menu>
-                  </sp-picker>
-                </sp-body>
-              </div>
-
-        <!-- ==========================================================================
-             Guides Section
-             ========================================================================== -->
-     <div class="group">
-  <sp-label>GUIDES</sp-label>
-  <sp-body  style="margin-bottom: 9px;">
-    <div class="guides-wrapper">
-            <div style="align-content: center; width: 100%;">
-              <sp-textfield size="s" placeholder="top" id="guidetop" type="number" style="width: 32%; margin-bottom: 4px"></sp-textfield>
-            </div>
-          <div>
-            <sp-textfield size="s" placeholder="left" id="guideleft" type="number" style="width: 32%"></sp-textfield>
-            <sp-action-button style="height: 24px" id="btnaddguides" class="buttthird">ADD GUIDES</sp-action-button>
-            <sp-textfield size="s" placeholder="right" id="guideright" type="number" style="width: 32%"></sp-textfield>
-          </div>
-            <div style="margin-bottom: 10px; align-content: center; width: 100%;">
-              <sp-textfield size="s" placeholder="bottom" id="guidebottom" type="number" style="width: 32%"></sp-textfield>
-            </div>
-          
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-            <sp-label style="margin: 0;">UNITS</sp-label>
-            <sp-radio-group id="guideselect" style="margin-left: 43px;">
-              <sp-radio value="percentUnit" checked>%</sp-radio>
-              <sp-radio value="pixelsUnit">px</sp-radio>
-            </sp-radio-group>
-          </div>
-            <sp-action-button id="btncross" class="butthalf">CROSS GUIDE</sp-action-button>
-            <sp-action-button id="btnRuleOfThirds" class="butthalf">RULE OF THIRDS</sp-action-button>
-            <sp-action-button id="btnGoldenRatio" class="butthalf">GOLDEN RATIO</sp-action-button>
-            <sp-action-button id="btnclearguides" class="butthalf">CLEAR ALL GUIDES</sp-action-button>
-         </div>
-
+        <!-- ========================================================================== -->
+        <!-- Filters Section                                                            -->
+        <!-- ========================================================================== -->
+        <div class="group" role="group" aria-labelledby="filters-label">
+          <sp-label id="filters-label">FILTERS</sp-label>
+          <sp-body style="margin-bottom: 8px;">
+            <sp-picker size="s" placeholder="SELECT FILTER" style="width: 100%;" id="filters" aria-label="Filter Selection">
+              <sp-menu slot="options">
+                <sp-menu-item disabled id="def" value="aaa">SELECT FILTER</sp-menu-item>
+                <sp-menu-item value="glamtone">GLAMOUR TONE</sp-menu-item>
+                <sp-menu-item value="sunglow">SUN GLOW</sp-menu-item>
+                <sp-menu-item value="sunnylook">SUNNY LOOK</sp-menu-item>
+                <sp-menu-divider></sp-menu-divider>
+                <sp-menu-item value="modern1">MODERN 1</sp-menu-item>
+                <sp-menu-item value="modern2">MODERN 2</sp-menu-item>
+                <sp-menu-item value="modern3">MODERN 3</sp-menu-item>
+                <sp-menu-item value="modern4">MODERN 4</sp-menu-item>
+                <sp-menu-item value="modern5">MODERN 5</sp-menu-item>
+                <sp-menu-item value="modern6">MODERN 6</sp-menu-item>
+                <sp-menu-item value="modern7">MODERN 7</sp-menu-item>
+                <sp-menu-item value="modern8">MODERN 8</sp-menu-item>
+                <sp-menu-item value="modern9">MODERN 9</sp-menu-item>
+                <sp-menu-item value="modern10">MODERN 10</sp-menu-item>
+                <sp-menu-divider></sp-menu-divider>
+                <sp-menu-item value="vintage1">VINTAGE 1</sp-menu-item>
+                <sp-menu-item value="vintage2">VINTAGE 2</sp-menu-item>
+                <sp-menu-item value="vintage3">VINTAGE 3</sp-menu-item>
+                <sp-menu-item value="vintage4">VINTAGE 4</sp-menu-item>
+                <sp-menu-item value="vintage5">VINTAGE 5</sp-menu-item>
+                <sp-menu-item value="vintage6">VINTAGE 6</sp-menu-item>
+                <sp-menu-item value="vintage7">VINTAGE 7</sp-menu-item>
+                <sp-menu-item value="vintage8">VINTAGE 8</sp-menu-item>
+                <sp-menu-item value="vintage9">VINTAGE 9</sp-menu-item>
+                <sp-menu-item value="vintage10">VINTAGE 10</sp-menu-item>
+                <sp-menu-divider></sp-menu-divider>
+                <sp-menu-item value="bw1">BLACK & WHITE 1</sp-menu-item>
+                <sp-menu-item value="bw2">BLACK & WHITE 2</sp-menu-item>
+                <sp-menu-item value="bw3">BLACK & WHITE 3</sp-menu-item>
+                <sp-menu-item value="bw4">BLACK & WHITE 4</sp-menu-item>
+                <sp-menu-item value="bw5">BLACK & WHITE 5</sp-menu-item>
+                <sp-menu-item value="bw6">BLACK & WHITE 6</sp-menu-item>
+                <sp-menu-item value="bw7">BLACK & WHITE 7</sp-menu-item>
+                <sp-menu-item value="bw8">BLACK & WHITE 8</sp-menu-item>
+                <sp-menu-divider></sp-menu-divider>
+                <sp-menu-item value="grainsmall">GRAIN SMALL</sp-menu-item>
+                <sp-menu-item value="grainmedium">GRAIN MEDIUM</sp-menu-item>
+                <sp-menu-item value="grainlarge">GRAIN LARGE</sp-menu-item>
+                <sp-menu-item value="grainextralarge">GRAIN EXTRA LARGE</sp-menu-item>
+                <sp-menu-divider></sp-menu-divider>
+                <sp-menu-item value="vignetting">VIGNETTING</sp-menu-item>
+              </sp-menu>
+            </sp-picker>
           </sp-body>
         </div>
 
-        <!-- ==========================================================================
-             Social Media Export Section
-             ========================================================================== -->
+        <!-- ========================================================================== -->
+        <!-- Guides Section                                                             -->
+        <!-- ========================================================================== -->
+        <div class="group">
+          <sp-label>GUIDES</sp-label>
+          <sp-body style="margin-bottom: 9px;">
+            <div class="guides-wrapper">
+              <div style="align-content: center; width: 100%;">
+                <sp-textfield size="s" placeholder="top" id="guidetop" type="number" style="width: 32%; margin-bottom: 4px"></sp-textfield>
+              </div>
+              <div>
+                <sp-textfield size="s" placeholder="left" id="guideleft" type="number" style="width: 32%"></sp-textfield>
+                <sp-action-button style="height: 24px" id="btnaddguides" class="buttthird">ADD GUIDES</sp-action-button>
+                <sp-textfield size="s" placeholder="right" id="guideright" type="number" style="width: 32%"></sp-textfield>
+              </div>
+              <div style="margin-bottom: 8px; align-content: center; width: 100%;">
+                <sp-textfield size="s" placeholder="bottom" id="guidebottom" type="number" style="width: 32%"></sp-textfield>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                <sp-label style="margin: 0;">UNITS</sp-label>
+                <sp-radio-group id="guideselect" style="margin-left: 43px;">
+                  <sp-radio value="percentUnit" checked>%</sp-radio>
+                  <sp-radio value="pixelsUnit">px</sp-radio>
+                </sp-radio-group>
+              </div>
+              <sp-action-button id="btncross" class="butthalf">CROSS GUIDE</sp-action-button>
+              <sp-action-button id="btnRuleOfThirds" class="butthalf">RULE OF THIRDS</sp-action-button>
+              <sp-action-button id="btnGoldenRatio" class="butthalf" style="margin-top: 4px;">GOLDEN RATIO</sp-action-button>
+              <sp-action-button id="btnclearguides" class="butthalf" style="margin-top: 4px;">CLEAR ALL GUIDES</sp-action-button>
+            </div>
+          </sp-body>
+        </div>
+
+        <!-- ========================================================================== -->
+        <!-- Social Media Export Section                                                -->
+        <!-- ========================================================================== -->
         <div class="group">
           <sp-label>PREPARE FOR SOCIAL MEDIA</sp-label>
           <sp-body style="margin-bottom: 8px;">
-                    <!-- Scaling -->
-          <div style="display: flex; justify-content: space-between; align-items: center;">
-            <sp-label style="margin: 0;">SCALING</sp-label>
-            <sp-radio-group id="canvasPlacement" direction="horizontal" style="margin-right: 13px;">
-              <sp-radio style="margin-right: 34px;" value="fit" checked>FIT</sp-radio>
-              <sp-radio value="fill">FILL</sp-radio>
-            </sp-radio-group>
-          </div>
-                      <!-- Canvas Background Color Selection -->
-          <div style="display: flex; justify-content: space-between; align-items: center;">
-            <sp-label style="margin: 0;">CANVAS COLOR</sp-label>
-            <sp-radio-group id="canvasBgColor" direction="horizontal">
-              <sp-radio value="white" checked>WHITE</sp-radio>
-              <sp-radio value="black">BLACK</sp-radio>
-            </sp-radio-group>
-          </div>
-                      <!-- Canvas Margin Selection -->
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 9px;">
-            <sp-label style="margin: 0;">CANVAS MARGIN</sp-label>
-            <sp-radio-group id="canvasMargin" direction="horizontal" style="margin-right: 17px;">
-              <sp-radio style="margin-right: 31px;" value="yes" checked>YES</sp-radio>
-              <sp-radio value="no">NO</sp-radio>
-            </sp-radio-group>
-          </div>
-                      <!-- Canvas Size Selection -->  
-          <sp-action-button id="btnCanvasSquare" class="butthalf">SQUARE (1080×1080)</sp-action-button>
-          <sp-action-button id="btnCanvasPortrait" class="butthalf">PORTRAIT (1080×1350)</sp-action-button>
-          <sp-action-button id="btnCanvasStory" class="butthalf">STORY (1080×1920)</sp-action-button>
-          <sp-action-button id="btnCanvasLandscape" class="butthalf">LANDSCAPE (1080x566)</sp-action-button>
-                      <!-- Custom Size -->    
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
-            <sp-action-button id="btnCustomSize" class="buttcustom">CUSTOM SIZE</sp-action-button>
-            <sp-textfield id="customWidth" size="s" placeholder="width" id="customWidth" type="number" style="width: 22%;"></sp-textfield>
-            <span class="canvas-size-symbol" style="margin: 0 1px;">×</span>
-            <sp-textfield id="customHeight" size="s" placeholder="height" type="number" style="width: 22%;"></sp-textfield>
-            <span class="canvas-size-symbol" style="margin-left: 1px;">px</span>
-          </div>
-
+            <!-- Scaling -->
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <sp-label style="margin: 0;">SCALING</sp-label>
+              <sp-radio-group id="canvasPlacement" direction="horizontal" style="margin-right: 13px;">
+                <sp-radio style="margin-right: 34px;" value="fit" checked>FIT</sp-radio>
+                <sp-radio value="fill">FILL</sp-radio>
+              </sp-radio-group>
+            </div>
+            <!-- Canvas Background Color Selection -->
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <sp-label style="margin: 0;">CANVAS COLOR</sp-label>
+              <sp-radio-group id="canvasBgColor" direction="horizontal">
+                <sp-radio value="white" checked>WHITE</sp-radio>
+                <sp-radio value="black">BLACK</sp-radio>
+              </sp-radio-group>
+            </div>
+            <!-- Canvas Margin Selection -->
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 9px;">
+              <sp-label style="margin: 0;">CANVAS MARGIN</sp-label>
+              <sp-radio-group id="canvasMargin" direction="horizontal" style="margin-right: 17px;">
+                <sp-radio style="margin-right: 31px;" value="yes" checked>YES</sp-radio>
+                <sp-radio value="no">NO</sp-radio>
+              </sp-radio-group>
+            </div>
+            <!-- Canvas Size Selection -->
+            <sp-action-button id="btnCanvasSquare" class="butthalf">SQUARE (1080×1080)</sp-action-button>
+            <sp-action-button id="btnCanvasPortrait" class="butthalf">PORTRAIT (1080×1350)</sp-action-button>
+            <sp-action-button id="btnCanvasStory" class="butthalf">STORY (1080×1920)</sp-action-button>
+            <sp-action-button id="btnCanvasLandscape" class="butthalf">LANDSCAPE (1080x566)</sp-action-button>
+            <!-- Custom Size -->
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+              <sp-action-button id="btnCustomSize" class="buttcustom">CUSTOM SIZE</sp-action-button>
+              <sp-textfield id="customWidth" size="s" placeholder="width" type="number" style="width: 22%;"></sp-textfield>
+              <span class="canvas-size-symbol" style="margin: 0 1px;">×</span>
+              <sp-textfield id="customHeight" size="s" placeholder="height" type="number" style="width: 22%;"></sp-textfield>
+              <span class="canvas-size-symbol" style="margin-left: 1px;">px</span>
+            </div>
           </sp-body>
         </div>
 
-        <!-- ==========================================================================
-             Export Section
-             ========================================================================== -->
+        <!-- ========================================================================== -->
+        <!-- Export Section                                                             -->
+        <!-- ========================================================================== -->
         <div class="group">
           <sp-label>EXPORT</sp-label>
           <sp-body style="margin-bottom: 5px;">
@@ -530,9 +526,9 @@
           </sp-body>
         </div>
 
-        <!-- ==========================================================================
-             Background Section
-             ========================================================================== -->
+        <!-- ========================================================================== -->
+        <!-- Background Section                                                         -->
+        <!-- ========================================================================== -->
         <div class="group" style="margin-bottom: 0px;">
           <sp-label>PS BACKGROUND</sp-label>
           <sp-body style="margin-bottom: 5px;">
@@ -541,32 +537,32 @@
             <sp-action-button id="btnbkgblack" class="buttthird">BLACK</sp-action-button>
           </sp-body>
         </div>
-       <!-- <div class="copyright-note" style="font-size: 12px;">© Adam Fedorowicz 2025</div>-->
+        <!-- <div class="copyright-note" style="font-size: 12px;">© Adam Fedorowicz 2025</div>-->
       </section>
-         <!-- ==========================================================================
-            Layer Management
-             ========================================================================== -->
+
+      <!-- ========================================================================== -->
+      <!-- Layer Management                                                           -->
+      <!-- ========================================================================== -->
       <div>
-      
-      <div class="diviconlayer" id="btnlayernew" role="button" title="Add New Layer">
-                <img src="./icons/layers/addh.png" alt="Add Layer">
-              </div>
-      <div class="diviconlayer" id="btnlayerduplicate" role="button" title="Duplicate Layer">
-                <img src="./icons/layers/duplicateh.png" alt="Duplicate Layer">
-              </div>
-      <div class="diviconlayer" id="btnlayerflatten" role="button" title="Flatten Layers">
-                <img src="./icons/layers/flattenh.png" alt="Flatten Layer">
-              </div>
-      <div class="diviconlayer" id="btnlayerstamp" role="button" title="Stamp Layers">
-                <img src="./icons/layers/stamph.png" alt="Stamp Layer">
-              </div>
-            <div class="diviconlayer" id="btnmask" role="button" title="Add Mask" id="btnmask">
-                <img src="./icons/layers/maskh.png" alt="Add Mask">
-              </div>  
-               <div class="diviconlayer" role="button" title="Delete Layer" id="btnDelete">
-                <img src="./icons/layers/deleteh.png" alt="Delete Layer">
-              </div>  
-      </div>  
+        <div class="diviconlayer" id="btnlayernew" role="button" title="Add New Layer">
+          <img src="./icons/layers/addh.png" alt="Add Layer">
+        </div>
+        <div class="diviconlayer" id="btnlayerduplicate" role="button" title="Duplicate Layer">
+          <img src="./icons/layers/duplicateh.png" alt="Duplicate Layer">
+        </div>
+        <div class="diviconlayer" id="btnlayerflatten" role="button" title="Flatten Layers">
+          <img src="./icons/layers/flattenh.png" alt="Flatten Layer">
+        </div>
+        <div class="diviconlayer" id="btnlayerstamp" role="button" title="Stamp Layers">
+          <img src="./icons/layers/stamph.png" alt="Stamp Layer">
+        </div>
+        <div class="diviconlayer" id="btnmask" role="button" title="Add Mask">
+          <img src="./icons/layers/maskh.png" alt="Add Mask">
+        </div>
+        <div class="diviconlayer" id="btnDelete" role="button" title="Delete Layer">
+          <img src="./icons/layers/deleteh.png" alt="Delete Layer">
+        </div>
+      </div>
     </main>
   </body>
 </html>

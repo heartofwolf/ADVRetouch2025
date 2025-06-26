@@ -1,7 +1,7 @@
 {
   "manifestVersion": 5,
-  "name": "ADV.RETOUCH Panel UXP Edition v1.3.1",
-  "version": "1.3.1",
+  "name": "ADV.RETOUCH Panel UXP Edition v1.3.2",
+  "version": "1.3.2",
   "id": "6c3dca2d",
   "main": "index.html",
   "host": {
@@ -29,9 +29,9 @@
         "height": 892
       },
       "label": {
-        "default": "ADV.RETOUCH UXP Edition v1.3.1",
-        "fr": "ADV.RETOUCH UXP Édition v1.3.1",
-        "de": "ADV.RETOUCH UXP Edition v1.3.1"
+        "default": "ADV.RETOUCH UXP Edition v1.3.2",
+        "fr": "ADV.RETOUCH UXP Édition v1.3.2",
+        "de": "ADV.RETOUCH UXP Edition v1.3.2"
       },
       "icons": [
         {

@@ -1,147 +1,155 @@
-/* ==========================================================================
-   Base Styles
-   ========================================================================== */
+/* ========================================================================== */
+/*  Base Styles                                                              */
+/* ========================================================================== */
 body {
-	cursor: default;
+    cursor: default;
 }
 
-/* ==========================================================================
-   Layout & Structure
-   ========================================================================== */
+/* ========================================================================== */
+/*  Layout & Structure                                                        */
+/* ========================================================================== */
 .wrapper {
-	width: 100vw;
-	height: 100vh;
-	padding: 8px;
-	text-align: center;
-	/* background: radial-gradient(#ff7a1574 0%, rgba(0, 0, 0, 0.55)); */
+    width: 100vw;
+    height: 100vh;
+    padding: 8px;
+    text-align: center;
+    /* background: radial-gradient(#ff7a1574 0%, rgba(0, 0, 0, 0.55)); */
 }
 
-/* ==========================================================================
-   Logo
-   ========================================================================== */
+/* ========================================================================== */
+/*  Logo                                                                      */
+/* ========================================================================== */
 .logo {
-	text-align: center;
-	margin: 10px 0px 20px;
-	width: 100vw;
-	height: 35px;
+    text-align: center;
+    margin: 10px 0px 20px;
+    width: 100vw;
+    height: 35px;
 }
 
 /* Logo background images based on color scheme */
 @media (prefers-color-scheme: dark),
 (prefers-color-scheme: darkest),
 (prefers-color-scheme: light) {
-	.logo {
-		background: url('./img/logo.png');
-	}
+    .logo {
+        background: url('./img/logo.png');
+    }
 }
 @media (prefers-color-scheme: lightest) {
-	.logo {
-		background: url('./img/logo-dark.png');
-	}
+    .logo {
+        background: url('./img/logo-dark.png');
+    }
 }
 
-/* ==========================================================================
-   Tabs Navigation
-   ========================================================================== */
+/* ========================================================================== */
+/*  Tabs Navigation                                                           */
+/* ========================================================================== */
 .sp-tabs {
-	display: flex;
-	flex-direction: row;
-	margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
 }
 .sp-tab {
-	width: 33.33%;
-	text-align: center;
+    width: 33.33%;
+    text-align: center;
 }
 .sp-tab sp-label {
-	color: rgba(255, 255, 255, 0.5);
-	font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
 }
 .sp-tab:hover sp-label {
-	color: white;
+    color: white;
 }
 .sp-tab.selected {
-	border-bottom: 3px solid #ff8415;
-	margin-bottom: -3px;
+    border-bottom: 3px solid #ff8415;
+    margin-bottom: -3px;
 }
 .sp-tab.selected sp-label {
-	color: white;
+    color: white;
 }
 
-/* ==========================================================================
-   Tab Pages
-   ========================================================================== */
+/* Light theme tab label overrides */
+@media (prefers-color-scheme: light), (prefers-color-scheme: lightest) {
+    .sp-tab sp-label {
+        color: #5a5a5a;
+    }
+    .sp-tab:hover sp-label {
+        color: #111;
+    }
+    .sp-tab.selected sp-label {
+        color: #111;
+    }
+}
+
+/* ========================================================================== */
+/*  Tab Pages                                                                 */
+/* ========================================================================== */
 .sp-tab-page {
-	display: none;
-	padding: 12px 0;
-	flex-direction: column;
+    display: none;
+    padding: 12px 0;
+    flex-direction: column;
 }
 .sp-tab-page.visible {
-	display: flex;
+    display: flex;
 }
-.sp-tab-page>* {
-	flex: 0 0 auto;
+.sp-tab-page > * {
+    flex: 0 0 auto;
 }
 
-/* ==========================================================================
-   Groups & Sections
-   ========================================================================== */
+/* ========================================================================== */
+/*  Groups & Sections                                                         */
+/* ========================================================================== */
 .group {
-	flex: 0 0 auto;
-	border-radius: 4px;
-	padding: 12px 0 5px;
-	position: relative;
-	margin: 10px 0 6px;
-	border: solid 1px #888;
-	/* background: radial-gradient(rgba(96, 40, 0, 0.55), rgba(0, 0, 0, 0.5)); */
+    flex: 0 0 auto;
+    border-radius: 4px;
+    padding: 12px 0 5px;
+    position: relative;
+    margin: 10px 0 6px;
+    border: solid 1px #888;
 }
 #sp-native-tab-page .group {
-	background-color: transparent;
-	border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.5);
 }
-.group>sp-label:not(.safe) {
-	position: absolute;
-	top: -1em;
-	left: 6px;
-	color: #ff8415;
-	display: block;
-	padding: 3px 12px;
-	border-radius: 4px;
-	border: solid 1px #888;
+.group > sp-label:not(.safe) {
+    position: absolute;
+    top: -1em;
+    left: 6px;
+    color: #ff8415;
+    display: block;
+    padding: 3px 12px;
+    border-radius: 4px;
+    border: solid 1px #888;
 }
-.group> :not(sp-label) {
-	margin: 12px;
+.group > :not(sp-label) {
+    margin: 12px;
 }
-.group> :not(sp-label):last-child {
-	margin-bottom: 4px;
+.group > :not(sp-label):last-child {
+    margin-bottom: 4px;
 }
+
 .guides-wrapper {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: space-between;
-  }
-  
-  .guides-wrapper sp-action-button {
-	align-self: center;
-  }
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.guides-wrapper sp-action-button,
+.guides-wrapper sp-radio {
+    align-self: center;
+}
 
-  .guides-wrapper sp-radio {
-	align-self: center;
-  }
-/* ==========================================================================
-   Rows & Layout
-   ========================================================================== */
-   .row {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	
-  }
+/* ========================================================================== */
+/*  Rows & Layout                                                             */
+/* ========================================================================== */
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
-/* ==========================================================================
-   Buttons
-   ========================================================================== */
-/* Common button styles */
+/* ========================================================================== */
+/*  Buttons                                                                   */
+/* ========================================================================== */
 .buttfull,
 .butthalf,
 .butt70,
@@ -156,70 +164,117 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    border-radius: 4px;
+    border: 1px solid;
+    cursor: pointer;
 }
-
-/* Full width button */
-.buttfull {
-	width: 100%;
-	margin-bottom: 5px;
-}
-
-/* Half width button */
-.butthalf {
-	width: 49.2%;
-}
-
-/* 70% width button */
-.butt70 {
-	width: 70%;
-}
-
-/* Long button */
-.buttlong {
-	width: 226px;
-}
-
-/* Third width button */
-.buttthird {
-	width: 32%;
-}
-
-/* Third width button */
-.buttcustom {
-	width: 40%;
-}
-
-/* Flexible width button */
-.buttflex {
-	width: 100px;
-	display: flex;
-}
-
-/* 20% width button */
+.buttfull { width: 100%; }
+.butthalf { width: 49.2%; }
+.butt70 { width: 70%; }
+.buttlong { width: 226px; }
+.buttthird { width: 32%; }
+.buttcustom { width: 40%; }
+.buttflex { width: 100px; display: flex; }
 .butt20 {
-	width: 20px;
-	height: 22px;
-	font-size: 13px;
-	margin-left: 2px;
-	margin-right: 0;
-	padding: 0;
+    width: 20px;
+    height: 22px;
+    font-size: 13px;
+    margin-left: 2px;
+    margin-right: 0;
+    padding: 0;
 }
 
-/* ==========================================================================
-   Tool Icons
-   ========================================================================== */
+/* Responsive button colors for PS color scheme */
+@media (prefers-color-scheme: dark), (prefers-color-scheme: darkest) {
+  .buttfull,
+  .butthalf,
+  .butt70,
+  .buttlong,
+  .buttthird,
+  .buttflex,
+  .butt20,
+  .buttcustom {
+    background: #363636; 
+    border-color: #444;
+    color: #e9e9e9;
+  }
+  .buttfull:hover,
+  .butthalf:hover,
+  .butt70:hover,
+  .buttlong:hover,
+  .buttthird:hover,
+  .buttflex:hover,
+  .butt20:hover,
+  .buttcustom:hover {
+    background: #424242; /* brighter on hover */
+    /* border-color: #ff8415; */
+  }
+  .buttfull:active,
+  .butthalf:active,
+  .butt70:active,
+  .buttlong:active,
+  .buttthird:active,
+  .buttflex:active,
+  .butt20:active,
+  .buttcustom:active {
+    background: #212121; /* darker on click */
+    /* border-color: #ff8415; */
+  }
+}
+@media (prefers-color-scheme: light), (prefers-color-scheme: lightest) {
+  .buttfull,
+  .butthalf,
+  .butt70,
+  .buttlong,
+  .buttthird,
+  .buttflex,
+  .butt20,
+  .buttcustom {
+    background: #f0f0f0; /* slightly darker than panel bg */
+    border-color: #bbb;
+    color: #222;
+  }
+  .buttfull:hover,
+  .butthalf:hover,
+  .butt70:hover,
+  .buttlong:hover,
+  .buttthird:hover,
+  .buttflex:hover,
+  .butt20:hover,
+  .buttcustom:hover {
+    background: #ffffff; /* brighter on hover */
+    border-color: #ff8415;
+  }
+  .buttfull:active,
+  .butthalf:active,
+  .butt70:active,
+  .buttlong:active,
+  .buttthird:active,
+  .buttflex:active,
+  .butt20:active,
+  .buttcustom:active {
+    background: #e0e0e0; /* darker on click */
+    border-color: #ff8415;
+  }
+}
+
+/* ========================================================================== */
+/*  Tool Icons                                                                */
+/* ========================================================================== */
 .divicon {
 	width: 24px;
 	height: 24px;
 	border: solid 1px;
 	border-radius: 4px;
 	display: inline-block;
+	cursor: pointer;
+
 }
 
 
-/* ==========================================================================
-   Layer Icons
-   ========================================================================== */
+/* ========================================================================== */
+/*  Layer Icons                                                               */
+/* ========================================================================== */
 
 .diviconlayer {
 	border: solid 1px;
@@ -230,6 +285,8 @@ body {
 	margin-right: 12px;
 	border-radius: 4px;
 	border-color: rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+
 }
 
 .diviconlayer img {
@@ -242,9 +299,9 @@ body {
 }
 
 
-/* ==========================================================================
-   Color Schemes
-   ========================================================================== */
+/* ========================================================================== */
+/*  Color Schemes                                                             */
+/* ========================================================================== */
 /* Dark theme styles */
 @media (prefers-color-scheme: dark),
 (prefers-color-scheme: darkest) {
@@ -290,6 +347,8 @@ border-color: #ff8415
 	}
 	.group>sp-label:not(.safe) {
 		background-color: #E8E8E8;
+		color: #ff8415;
+		font-weight: 600;
 	}
 	.sp-tab {
 		background-color: rgba(0, 0, 0, 0.1);
@@ -297,7 +356,15 @@ border-color: #ff8415
 	.sp-tab.selected {
 		background: rgba(0, 0, 0, 0.2);
 	}
-		.divicon {
+	.sp-tab sp_label {
+		color: #888;
+	}
+	.sp-tab.selected sp_label {
+		color: #222;
+		font-weight: 700;
+		text-shadow: 0 1px 0 #fff, 0 0px 2px #fff;
+	}
+	.divicon {
 		border-color: rgba(0, 0, 0, 0.2);
 		background-color: var(--uxp-host-background-color);
 	}
@@ -320,11 +387,29 @@ border-color: #ff8415
     border-color: #ff8415
 }
 
+	/* Improve visibility for slider values and labels */
+	.slider-container sp-slider,
+	.slider-container sp-slider sp_label[slot="label"],
+	.slider-row sp-slider,
+	.slider-row .color-indicator {
+		color: #222 !important;
+	}
+	/* White Balance and Tint value text (if any) */
+	.slider-container sp-slider::part(value),
+	.slider-row sp-slider::part(value) {
+		color: #222 !important;
+		font-weight: 600;
+	}
+	/* General label improvements */
+	sp-label, sp-body, .canvas-size-symbol {
+		color: #222;
+	}
+
 }
 
-/* ==========================================================================
-   Slider Color Indicators
-   ========================================================================== */
+/* ========================================================================== */
+/*  Slider Color Indicators                                                   */
+/* ========================================================================== */
 
 .slider-container {
 	position: relative;
@@ -385,9 +470,9 @@ border-color: #ff8415
 	display: block;
 }
 
-/* ==========================================================================
-   Slider Row for Edge Dots
-   ========================================================================== */
+/* ========================================================================== */
+/*  Slider Row for Edge Dots                                                  */
+/* ========================================================================== */
 .slider-row {
     display: flex;
     align-items: center;
@@ -415,9 +500,9 @@ border-color: #ff8415
 .tint-magenta { background-color: #e04ecb; }
 
 
-/* ==========================================================================
-   Shape Section Buttons 
-   ========================================================================== */
+/* ========================================================================== */
+/*  Shape Section Buttons                                                     */
+/* ========================================================================== */
 
 
 .shape-row2 {
@@ -449,9 +534,9 @@ border-color: #ff8415
   .shape-group2 .divicon + .divicon {
 	margin-left: 4px;
   }
-/* ==========================================================================
-   Copyright Note
-   ========================================================================== */
+/* ========================================================================== */
+/*  Copyright Note                                                            */
+/* ========================================================================== */
 
    .copyright-note {
 	text-align: center;
@@ -463,9 +548,9 @@ border-color: #ff8415
 
 
 
-/* ==========================================================================
-   Set font size for radio buttons and canvas size symbols
-   ========================================================================== */
+/* ========================================================================== */
+/*  Set font size for radio buttons and canvas size symbols                   */
+/* ========================================================================== */
 
 #canvasBgColor sp-radio,
 #canvasPlacement sp-radio,
@@ -477,3 +562,4 @@ border-color: #ff8415
 .canvas-size-symbol {
 	font-size: 12px;
   }
+
